@@ -2,8 +2,8 @@
 ## Descripción del Proyecto
 Este proyecto se centra en el desarrollo de una página web de iluminación, con la implementación de tres clases fundamentales: Producto, Cliente y Superadministrador. Cada una de estas clases desempeña un papel específico en la plataforma.
 ## Clases Definidas
-1. **Producto:** Representa los productos de iluminación disponibles en la tienda.
-1. **Cliente:** Representa a los usuarios que pueden explorar y realizar compras en la página.
+1. **Producto:** Representa los productos que se van a encontrar.
+1. **Cliente:** Representa a los usuarios que pueden explorar y realizar "compras" en la página.
 1. **Superadministrador:** Posee privilegios elevados para gestionar y administrar la plataforma en su totalidad.
 ## Carga de Formularios
 Se ha implementado un sistema de carga de formularios para facilitar la incorporación de nuevos productos y la gestión de clientes por parte del superadministrador.
