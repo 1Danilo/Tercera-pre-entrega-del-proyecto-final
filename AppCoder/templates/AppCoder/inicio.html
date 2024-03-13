@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %} {% block titulo %}
+
+Materiales de Iluminacion
+
+{% endblock %}
+
+{% block descripcion %}
+
+<form action="/AppCoder/resultados/" method="GET">
+  <input type="number" name="serie" id="producto" />
+
+  <input type="submit" value="Buscar" />
+</form>
+
+    {% if serie %}
+    <p>Estamos buscando la serie: {{ serie }}</p>
+
+    {% for producto in productos %}
+    <p>Producto: {{ producto.nombre }} --- Serie: {{ producto.serie }}</p>
+    {% endfor %} {% else %}
+    <p>{{ respuesta }}</p>
+    {% endif %}
+
+{% endblock %}

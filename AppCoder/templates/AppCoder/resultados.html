@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Busqueda Productos</title>
+  </head>
+  <body>
+    {% if serie %}
+    <p>Estamos buscando la serie: {{ serie }}</p>
+
+    {% for producto in productos %}
+    <p>Producto: {{ producto.nombre }} --- Serie: {{ producto.serie }}</p>
+    {% endfor %} {% else %}
+    <p>{{ respuesta }}</p>
+    {% endof %}
+  </body>
+</html>
