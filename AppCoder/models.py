@@ -5,7 +5,7 @@ from django.db import models
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=60)
-    serie = models.CharField(max_length=255)
+    serie = models.IntegerField()
 
 
 class Cliente(models.Model):
